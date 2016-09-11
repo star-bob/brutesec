@@ -1,0 +1,47 @@
+<html>
+<title>BRUTEsec : Hash Databases for brute-force attacks</title><link rel="icon" type="image/png" href="CVtqqg1423314765.png" /><head><meta name="google-site-verification" content="EU79a8v1RpN3uh1xos2-aiSWmA7uIlRBm30CA1-XxCk" /></head>
+<style> 
+body {
+    overflow-x: hidden;
+}
+</style>
+<pre>
+ _______  ______    __   __  _______  _______  _______  _______  _______ 
+|  _    ||    _ |  |  | |  ||       ||       ||       ||       ||       |
+| |_|   ||   | ||  |  | |  ||_     _||    ___||  _____||    ___||       |
+|       ||   |_||_ |  |_|  |  |   |  |   |___ | |_____ |   |___ |       |
+|  _   | |    __  ||       |  |   |  |    ___||_____  ||    ___||      _|
+| |_|   ||   |  | ||       |  |   |  |   |___  _____| ||   |___ |     |_ 
+|_______||___|  |_||_______|  |___|  |_______||_______||_______||_______|
+</pre>
+<br>
+<object style='font-family:Courier New;'>BRUTEsec is a place where you can download huge databases that can be used for bruteforcing and cracking hashed data.
+<BR>Every file contains hashes and hash outputs in SQLite database format. 
+<br><br>BitTorrent Sync is needed in order to download databases. Get it here <a href='http://www.getsync.com/'>http://www.getsync.com</a>
+<br><br>Virtual tables were used for database optimization. Made by Fanis Siampos.
+<br><br>
+<b>SHA-256</b> (12-character length, alphanumeric): 20 GB 
+
+
+<input type=button onClick="parent.location='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FZ4NEWGV8KCMN'" value='Purchase'>
+
+
+<BR><Br>
+<b>MD5</b> (10-character length, alphanumeric, special characters) : 5 GB 
+<input type=button onClick="parent.location='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M3BSZQWSM3RQC'" value='Purchase'>
+
+
+
+
+<br><br><br>In order to search for an output of a specific hash value through command-line interface first install sqlite3.
+<br><br>After, read the database files:
+<br><br>
+sqlite3> .open /path/to/your/dbfile/sha256.db
+<br><br>and query the database for that value
+<br><br>
+sqlite3> SELECT * FROM hash_text WHERE hashes MATCH 'b18ec781f24cf1bd34d6c766dd7df5794048848cce610fbfb8c09890075298f1';
+</object>
+
+
+
+</html>
